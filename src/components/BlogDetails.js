@@ -25,7 +25,7 @@ const BlogDetails = (props) => {
       .doc(id)
       .delete()
       .then(() =>{ alert("Blog succesfully deleted!")
-        history.push("/")
+        history.push("/blog-webpage")
     })
       .catch((error) => alert(error.message))
   };

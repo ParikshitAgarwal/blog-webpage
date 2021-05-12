@@ -9,7 +9,7 @@
 
 .App {
   height: 100vh;
-  background-image: linear-gradient(to top, #d9a7c7 0%, #fffcdc 100%);
+  background-image: linear-gradient(to top, #FCDFDA 0%, #FDBE89 100%);
 }
 
 .navbar {
@@ -39,6 +39,9 @@
   margin: 40px auto;
   padding: 20px;
 }
+.blog-list .title{
+padding-left: 15px;
+}
 
 .blog-preview {
   padding: 10px 16px;
@@ -56,6 +59,10 @@
 }
 .blog-preview a {
   text-decoration: none;
+}
+.blog-preview p{
+  font-size: 12px;
+  font-weight: 600;
 }
 .blog-details h2 {
   font-size: 20px;
@@ -96,9 +103,8 @@
   width: 100%;
   padding: 6px 0px;
   margin: 10px 0;
-  border-radius: 4px;
+  background-color: rgba(255, 255, 255,0.8);
   border: none;
-  box-shadow: 2px 4px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   display: block;
   outline: none;
@@ -195,6 +201,7 @@
   .signin {
     display: flex;
     flex-direction: column;
+   
   }
   
 
@@ -206,9 +213,11 @@
     
   }
   .form {
+    margin: 0px;
+    padding-left: 20px;
+   
     position: relative;
-    right: 80px;
-    top: -90px;
+    top: -50px;
   }
 
   .signin_left h5{
@@ -218,3 +227,59 @@
 
 
 }
+
+@media screen and (max-width:450px) {
+  .list{
+    background-color: #f1356d;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar{
+    display: flex;
+    
+  }
+  .burger{
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    z-index: 1;
+  }
+  .links{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    top: -100%;
+    
+    height: 45vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    transition: 0.5s all ease;
+  }
+  .links button{
+    margin-top: 25px;
+    padding: 20px 80px;
+    font-size: 20px;
+  }
+  
+  .links.active{
+    top: 0;
+  }
+
+  .links.active .burger .list:nth-child(2){
+    opacity: 0;
+  }
+  .links.active .burger .list:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .links.active .burger .list:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+}
+

@@ -23,7 +23,7 @@ const Create = () => {
         .then(() => {
             alert("Blog has been submitted")
             setIsPending(false)
-            history.push("/")
+            history.push("/blog-webpage")
  
         })
         .catch((err) => {

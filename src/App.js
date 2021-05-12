@@ -33,13 +33,13 @@ function App() {
 
           <div className="content">
             <Switch>
-              <Route exact path="/">
+              <Route exact path="/blog-webpage">
                 <Home />
               </Route>
-              <Route path="/Create">
+              <Route path="/blog-webpage/Create">
                 <Create />
               </Route>
-              <Route path="/blogs/:id">
+              <Route path="/blog-webpage/blogs/:id">
                 <BlogDetails />
               </Route>
               <Route path="*">

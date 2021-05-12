@@ -24,12 +24,12 @@ const BlogsList = () => {
  
   return (
     <div className="blog-list">
-      <h2>BLogs</h2>
-      {!isLoading && <div style={{textAlign:"center",marginTop:100,fontSize:20}}>Loading...</div>}
+      <h2 className="title">BLOGS</h2>
+      {!isLoading && <div style={{textAlign:"center",marginTop:100,fontSize:20  }}>Loading...</div>}
       {blogs &&
         blogs.map((blog) => (
           <div className="blog-preview" key={blog.id}>
-            <Link to={`/blogs/${blog.id}`}>
+            <Link to={`/blog-webpage/blogs/${blog.id}`}>
               <h2>{blog.title}</h2>
               <p>Written by {blog.author}</p>
             </Link>
