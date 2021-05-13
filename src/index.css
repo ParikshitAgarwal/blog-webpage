@@ -10,8 +10,13 @@
 .App {
   height: 100vh;
   background-image: linear-gradient(to top, #FCDFDA 0%, #FDBE89 100%);
+
 }
 
+.tech-art{
+  width:100vw;
+  height: 30vh;
+}
 .navbar {
   padding: 20px;
   display: flex;
@@ -136,6 +141,7 @@ padding-left: 15px;
   width: 300px;
   height: 300px;
 }
+
 .form {
   margin-top: 30px;
   margin-left: 150px;
@@ -197,11 +203,12 @@ padding-left: 15px;
   cursor: pointer;
 }
 
+
 @media screen and (max-width: 800px) {
+
   .signin {
     display: flex;
     flex-direction: column;
-   
   }
   
 
@@ -209,11 +216,11 @@ padding-left: 15px;
     display: flex;
     justify-content: center;
     height: 250px;
-  
-    
+    width: fit-content;
   }
+
   .form {
-    padding-left: 15px;
+    padding-left: 10px;
     margin: 0;
     position: relative;
     top: -50px;
@@ -232,6 +239,16 @@ padding-left: 15px;
 }
 
 @media screen and (max-width:450px) {
+  .signin_left img{
+    width: 250px;
+    height: 250px;
+  }
+  
+.signin_input input{
+  padding: 10px 0px 10px 33px;
+}
+  
+
   .list{
     background-color: #f1356d;
     width: 25px;
@@ -285,4 +302,5 @@ padding-left: 15px;
   }
 
 }
+
 
